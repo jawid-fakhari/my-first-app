@@ -1,14 +1,22 @@
 .navbar {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   text-align: center;
   font-family: "Franklin Gothic Medium";
   box-shadow: 0px 3px 5px #ddd;
   height: 60px;
 }
+.navbar .logo {
+  display: flex;
+  justify-content: left;
+  padding-left: 40px;
+  width: 50%;
+}
 .navbar ul {
   display: flex;
+  justify-content: right;
+  width: 50%;
   column-gap: 10px;
   padding-right: 40px;
 }
