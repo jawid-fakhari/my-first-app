@@ -1,0 +1,8 @@
+.homeWrapper .projectsWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.homeWrapper h2 {
+  margin: 50px 0;
+}

@@ -1,0 +1,6 @@
+.projectBoxWrapper {
+  width: calc(98% / 3);
+  min-width: 400px;
+  border: 1px solid red;
+  margin: 10px 0;
+}
