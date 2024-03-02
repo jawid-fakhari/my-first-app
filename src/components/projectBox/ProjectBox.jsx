@@ -1,11 +1,10 @@
 import styled from './projectBox.module.css';
+import projectImage from '../../assets/images/tclasher.png'
 
 function ProjectBox(props) {
     return (
         <div className={styled.projectBoxWrapper}>
-            <div>
-                <h3>Box</h3>
-            </div>
+            <img src={projectImage} alt="" />
         </div>
     );
 }
