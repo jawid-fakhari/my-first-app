@@ -2,8 +2,12 @@ import styled from './navbar.module.css';
 
 function Navbar() {
   return (
-    <div className={styled.header}>
-      <h2 className={styled.navbar}>This is Navbar</h2>
+    <div className={styled.navbar}>
+      <ul>
+        <li>Portfolio</li>
+        <li>New Project</li>
+        <li>About Me</li>
+      </ul>
     </div>
   );
 }

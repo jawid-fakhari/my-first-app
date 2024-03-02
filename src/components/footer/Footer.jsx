@@ -1,6 +1,7 @@
+import styled from './footer.module.css';
 function Footer() {
   return (
-    <div>
+    <div className={styled.header}>
       <h3>This is Footer</h3>
     </div>
   );
