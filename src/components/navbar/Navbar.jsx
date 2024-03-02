@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <div>
-      <h2>This is Navbar</h2>
+      <h2 style={{backgroundColor: "white", textAlign: "center"}}>This is Navbar</h2>
     </div>
   );
 }
