@@ -1,9 +1,24 @@
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>My first App</h1>
-      </header>
+    <div>
+      <Navbar />
+      <Footer />
+    </div>
+  );
+}
+
+function Navbar() {
+  return (
+    <div>
+      <h2>This is Navbar</h2>
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div>
+      <h3>This is Footer</h3>
     </div>
   );
 }
