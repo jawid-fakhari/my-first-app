@@ -1,18 +1,24 @@
 {
-    "myAPI":{
+    "portfolio":{
         "status": true,
         "message": "success",
-        "data":[
+        "projects":[
             {
                 "id": 1,
                 "imgUrl": "",
-                "title": "tchalsher",
+                "title": "T Clasher",
                 "visitSrcUrl": ""
             },
             {
                 "id": 2,
                 "imgUrl": "",
-                "title": "cFundning",
+                "title": "Crowd Funding",
+                "visitSrcUrl": ""
+            },
+            {
+                "id": 3,
+                "imgUrl": "",
+                "title": "Interaction Pricing",
                 "visitSrcUrl": ""
             }
         ]

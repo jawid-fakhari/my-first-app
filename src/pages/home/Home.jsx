@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import ProjectBox from "../../components/projectBox/ProjectBox";
 import styled from "./home.module.css";
+import axios from "axios";
 
 
 function Home(props) {
@@ -10,26 +11,17 @@ function Home(props) {
 
 
     useEffect(() => {
-        setInfo([
-            {
-                "id": 1,
-                "imgUrl": "",
-                "title": "T Clasher",
-                "visitSrcUrl": ""
-            },
-            {
-                "id": 2,
-                "imgUrl": "",
-                "title": "Crowd Funding",
-                "visitSrcUrl": ""
-            },
-            {
-                "id": 3,
-                "imgUrl": "",
-                "title": "Interaction Pricing",
-                "visitSrcUrl": ""
-            }
-        ]);
+        //API call
+        axios.get('http://localhost:8000/portfolio')
+            .then(res => {
+
+                setInfo(res.data.projects)
+
+                console.log(res.data.projects);
+            })
+            .catch((err) => {
+                console.error(err);
+            })
 
     }, []);
 
