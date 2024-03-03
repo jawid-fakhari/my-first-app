@@ -1,16 +1,16 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "../../components/navbar/Navbar";
 import ProjectBox from "../../components/projectBox/ProjectBox";
 import styled from "./home.module.css";
 
 
 function Home(props) {
-    let info = [];
 
-    console.log("React First does Render");
+    const [info, setInfo] = useState([])
+
 
     useEffect(() => {
-        info = [
+        setInfo([
             {
                 "id": 1,
                 "imgUrl": "",
@@ -29,11 +29,11 @@ function Home(props) {
                 "title": "Interaction Pricing",
                 "visitSrcUrl": ""
             }
-        ];
-        console.log("Then does Mounting");
+        ]);
+
     }, []);
 
-    console.log("React First does Render");
+
 
 
     return (
