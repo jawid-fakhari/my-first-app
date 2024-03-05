@@ -1,31 +1,11 @@
-import { useEffect, useState } from "react";
+
 import Navbar from "../../components/navbar/Navbar";
 import ProjectBox from "../../components/projectBox/ProjectBox";
 import styled from "./home.module.css";
-import axios from "axios";
+import projects from './db';
 
 
 function Home(props) {
-
-    const [info, setInfo] = useState([])
-
-
-    useEffect(() => {
-        //API call
-        axios.get('http://localhost:8000/portfolio')
-            .then(res => {
-
-                setInfo(res.data.projects)
-
-                console.log(res.data.projects);
-            })
-            .catch((err) => {
-                console.error(err);
-            })
-
-    }, []);
-
-
 
 
     return (
@@ -34,10 +14,14 @@ function Home(props) {
             <div className="container">
                 <h2>My Works</h2>
                 <div className={styled.projectsWrapper}>
-                    {info.map(data => (
-                        < ProjectBox key={data.id} data={data} />
-                    ))
-                    }
+                    {projects.map((project, index) =>
+                    (< ProjectBox
+                        key={index}
+                        name={project.name}
+                        image={project.image}
+                        link={project.link}
+                    />)
+                    )}
                 </div>
             </div>
         </div>

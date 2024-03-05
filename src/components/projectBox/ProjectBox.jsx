@@ -1,13 +1,17 @@
 import styled from './projectBox.module.css';
-import projectImage from '../../assets/images/tclasher.png';
-// import Home from '../../pages/home/Home';
+import { FaGithub } from 'react-icons/fa';
 
-function ProjectBox(props) {
+function ProjectBox({ name, image, link }) {
 
     return (
         <div className={styled.projectBoxWrapper}>
-            <img src={projectImage} alt="" />
-            <div className={styled.titleSpace}><span>{props.data.title}</span><span className={styled.arrBtn}>&#128437;</span></div>
+            <img src={image} alt="" />
+            <div className={styled.titleSpace}>
+                <span>{name}</span>
+                <span className={styled.arrBtn}>
+                    <a href={link}><FaGithub /></a>
+                </span>
+            </div>
         </div>
     );
 }
