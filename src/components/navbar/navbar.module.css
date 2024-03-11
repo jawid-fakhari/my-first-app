@@ -22,3 +22,7 @@
 .navbar li {
   cursor: pointer;
 }
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}

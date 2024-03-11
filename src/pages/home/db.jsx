@@ -9,37 +9,37 @@ const projects = [
         id: 2,
         name: "Crowd Funding",
         image: "./images/crowdFunding.png",
-        link: "#"
+        link: "https://crowdfunding-product-page-main-two.vercel.app/"
     },
     {
         id: 3,
         name: "Bill Spliter",
         image: "/images/spliter.png",
-        link: "#"
+        link: "https://tip-calculator-app-xi.vercel.app/"
     },
     {
         id: 4,
         name: "Weather App",
         image: "/images/weather.png",
-        link: "#"
+        link: "https://weather-app-ashen-one.vercel.app/"
     },
     {
         id: 5,
         name: "To Do List",
         image: "/images/toDoList.png",
-        link: "#"
+        link: "https://to-do-list-app-lyart-mu.vercel.app/"
     },
     {
         id: 6,
         name: "Simpple Quiz",
         image: "/images/simpleQuiz.png",
-        link: "#"
+        link: "https://quiz-app-lilac-kappa.vercel.app/"
     },
     {
         id: 7,
         name: "Password Maker App",
         image: "./images/passwordMaker.png",
-        link: "#"
+        link: "https://password-maker-app.vercel.app/"
     },
     {
         id: 8,

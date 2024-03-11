@@ -1,15 +1,16 @@
 import styled from './navbar.module.css';
+import { Link } from 'react-router-dom';
 
-function Navbar(props) {
+function Navbar() {
     return (
         <div className={styled.navBarWrapper}>
             <div className="container">
                 <div className={styled.navbar}>
-                    <div className={styled.logo}>{props.logoSrc}</div>
+                    <div className={styled.logo}>🐼</div>
                     <ul>
-                        <li>Home</li>
-                        <li>About Me</li>
-                        <li>Contact</li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about">About Me</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
             </div>
