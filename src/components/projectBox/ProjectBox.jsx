@@ -2,6 +2,7 @@ import styled from './projectBox.module.css';
 import { FaGithub } from 'react-icons/fa';
 
 function ProjectBox({ name, image, link, gitLink }) {
+
     return (
         <div className={styled.projectBoxWrapper}>
             <div onClick={() => window.open(link, '_blank')}>
@@ -10,7 +11,7 @@ function ProjectBox({ name, image, link, gitLink }) {
             <div className={styled.titleSpace}>
                 <span>{name}</span>
                 <span className={styled.arrBtn}>
-                    <a href={gitLink}><FaGithub /></a>
+                    <FaGithub onClick={() => window.open(gitLink, '_blank')} />
                 </span>
             </div>
         </div>

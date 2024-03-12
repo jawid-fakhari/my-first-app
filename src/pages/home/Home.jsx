@@ -23,7 +23,7 @@ function Home(props) {
                         name={project.name}
                         image={project.image}
                         link={project.link}
-                    // gitLink={project.gitLink}
+                        gitLink={project.gitLink}
                     />)
                     )}
                 </div>
