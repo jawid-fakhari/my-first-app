@@ -1,0 +1,21 @@
+.aboutBody {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 60%;
+  margin: 50px auto;
+  gap: 10px;
+
+  border: 2px solid red;
+}
+img {
+  width: 25vw;
+
+  border: 1px solid red;
+}
+.textWrap {
+  width: 33vw;
+  height: 70vh;
+  background-color: rgb(188, 188, 188);
+  border: 1px solid red;
+}

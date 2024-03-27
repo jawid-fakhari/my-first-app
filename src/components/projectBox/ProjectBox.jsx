@@ -5,7 +5,11 @@ function ProjectBox({ name, image, link, gitLink }) {
 
     return (
         <div className={styled.projectBoxWrapper}>
-            <div onClick={() => window.open(link, '_blank')}>
+            <div onClick={() =>
+                link.includes("https://")
+                    ? window.open(link, '_blank')
+                    : alert("This project is still in progress. Explore other available projects!")
+            }>
                 <img src={image} alt="" />
             </div>
             <div className={styled.titleSpace}>
