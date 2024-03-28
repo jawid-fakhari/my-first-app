@@ -8,12 +8,16 @@ const About = () => {
         <div>
             <Navbar />
             <div className={styled.aboutBody}>
-                <div className={styled.img}>
+                <div className={styled.aboutImg}>
+                    <div className={styled.imageBox}><h1>IMAGE</h1></div>
                     <img src={data.about.image} alt="jawid fakhari" />
                 </div>
                 <div className={styled.textWrap}>
                     <div className={styled.text}>
-                        <p>Hey there! I'm a frontend web developer with a passion for creating beautiful and user-friendly websites. My academic background includes studies in product design and graphic design, which have given me a unique perspective on creating visually appealing and functional digital experiences. I love experimenting with new technologies and techniques to stay ahead of the curve in the ever-evolving world of web development. When I'm not coding, you can find me exploring the latest design trends, hiking in the great outdoors, or trying out new recipes in the kitchen. Let's connect and create something amazing together!</p>
+                        <p>I am a self-taught <span>Frontend Web Developer</span> with an academic background in <span>art and design.</span> With a strong interest in technology and design, I enjoy <span>continuously learning</span> and challenging myself. I <span>constantly seek new opportunities</span> to expand my skillset and grow professionally. The combination of my creativity and technical expertise enables me to create visually appealing and user-friendly web interfaces, always aiming for an optimal user experience. I am excited to work in a dynamic and collaborative environment, where I can contribute my passion for design and technology to develop innovative and engaging projects.</p>
+                    </div>
+                    <div className={styled.skills}>
+
                     </div>
                 </div>
             </div>

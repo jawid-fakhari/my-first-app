@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap");
+
 .aboutBody {
   display: flex;
   justify-self: center;
@@ -8,14 +10,36 @@
 
   border: 2px solid red;
 }
-img {
+.aboutImg {
   width: 25vw;
-
-  border: 1px solid red;
+  height: 80vh;
+  border: 1px dotted red;
+}
+/* qui poi devo togliere */
+.imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ------ */
+.aboutImg img {
+  width: 25vw;
+  display: none;
 }
 .textWrap {
   width: 33vw;
   height: 70vh;
   background-color: rgb(188, 188, 188);
   border: 1px solid red;
+}
+.text p {
+  font-family: "Cutive Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  text-align: justify;
+  line-height: 1.3em;
+}
+.text p span {
+  font-size: 17px;
+  text-decoration: solid underline 1px black;
 }
