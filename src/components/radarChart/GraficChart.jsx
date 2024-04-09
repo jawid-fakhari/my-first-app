@@ -1,0 +1,75 @@
+import React, { PureComponent } from 'react';
+import {
+    Radar,
+    RadarChart,
+    PolarGrid,
+    PolarAngleAxis,
+    PolarRadiusAxis,
+    ResponsiveContainer
+} from 'recharts';
+
+const data = [
+    {
+        subject: 'JavaScript',
+        A: 85,
+        B: 110,
+        fullMark: 150,
+    },
+    {
+        subject: 'HTML',
+        A: 90,
+        B: 130,
+        fullMark: 150,
+    },
+    {
+        subject: 'CSS',
+        A: 90,
+        B: 130,
+        fullMark: 150,
+    },
+    {
+        subject: 'Package managers',
+        A: 75,
+        B: 100,
+        fullMark: 150,
+    },
+    {
+        subject: 'React',
+        A: 60,
+        B: 90,
+        fullMark: 150,
+    },
+    {
+        subject: 'Git',
+        A: 75,
+        B: 85,
+        fullMark: 150,
+    },
+];
+
+function GraficChart() {
+
+    return (
+        <RadarChart
+            cx={300}
+            cy={250}
+            outerRadius={150}
+            width={500}
+            height={500}
+            data={data}
+        >
+            <PolarGrid />
+            <PolarAngleAxis dataKey="subject" />
+            <PolarRadiusAxis />
+            <Radar
+                name="Jawid"
+                dataKey="A"
+                stroke="#8884d8"
+                fill="#8884d8"
+                fillOpacity={0.3}
+            />
+        </RadarChart>
+    );
+}
+
+export default GraficChart;

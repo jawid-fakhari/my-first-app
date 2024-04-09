@@ -6,14 +6,14 @@
   align-items: center;
   width: 60%;
   margin: 50px auto;
-  gap: 10px;
+  gap: 20px;
 
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 .aboutImg {
   width: 25vw;
-  height: 80vh;
-  border: 1px dotted red;
+  /* height: 80vh; */
+  /* border: 1px dotted red; */
 }
 /* qui poi devo togliere */
 .imageBox {
@@ -21,18 +21,13 @@
   justify-content: center;
   align-items: center;
 }
-/* ------ */
-.aboutImg img {
-  width: 25vw;
-  display: none;
-}
 .textWrap {
   width: 33vw;
-  height: 70vh;
   background-color: rgb(188, 188, 188);
-  border: 1px solid red;
+  padding: 15px;
+  /* border: 1px dashed red; */
 }
-.text p {
+.text {
   font-family: "Cutive Mono", monospace;
   font-weight: 600;
   font-style: normal;
@@ -42,4 +37,8 @@
 .text p span {
   font-size: 17px;
   text-decoration: solid underline 1px black;
+}
+
+.skills {
+  margin: 50px 0;
 }
