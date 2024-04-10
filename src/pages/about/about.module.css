@@ -1,27 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap");
 
 .aboutBody {
-  display: flex;
-  justify-self: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr;
   width: 60%;
   margin: 50px auto;
   gap: 20px;
-
-  /* border: 2px solid red; */
+  /* border: 1px dashed red; */
+}
+.aboutMe {
+  display: grid;
+  /* justify-content: start; */
+  grid-template-columns: 1fr 1fr;
 }
 .aboutImg {
-  width: 25vw;
-  /* height: 80vh; */
-  /* border: 1px dotted red; */
-}
-/* qui poi devo togliere */
-.imageBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 23vw;
 }
 .textWrap {
+  margin: 20px 0 -20px;
   width: 33vw;
   background-color: rgb(188, 188, 188);
   padding: 15px;
@@ -41,4 +37,11 @@
 
 .skills {
   margin: 50px 0;
+}
+
+.timeLineWrap {
+  /* border: 1px dashed red; */
+}
+.time {
+  color: #2f2f2f;
 }

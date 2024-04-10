@@ -12,37 +12,31 @@ const data = [
     {
         subject: 'JavaScript',
         A: 85,
-        B: 110,
         fullMark: 150,
     },
     {
         subject: 'HTML',
         A: 90,
-        B: 130,
         fullMark: 150,
     },
     {
         subject: 'CSS',
         A: 90,
-        B: 130,
         fullMark: 150,
     },
     {
         subject: 'Package managers',
         A: 75,
-        B: 100,
         fullMark: 150,
     },
     {
         subject: 'React',
         A: 60,
-        B: 90,
         fullMark: 150,
     },
     {
         subject: 'Git',
         A: 75,
-        B: 85,
         fullMark: 150,
     },
 ];
