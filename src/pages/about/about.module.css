@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Special+Elite&display=swap");
+
+.aboutBody {
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 60%;
+  margin: 50px auto;
+  gap: 20px;
+  /* border: 1px dashed red; */
+}
+.aboutMe {
+  display: grid;
+  /* justify-content: start; */
+  grid-template-columns: 1fr 1fr;
+}
+.aboutImg {
+  width: 23vw;
+}
+.textWrap {
+  margin: 20px 0 -20px;
+  width: 33vw;
+  background-color: rgb(188, 188, 188);
+  padding: 15px;
+  /* border: 1px dashed red; */
+}
+.text {
+  font-family: "Cutive Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  text-align: justify;
+  line-height: 1.3em;
+}
+.text p span {
+  font-size: 17px;
+  text-decoration: solid underline 1px black;
+}
+
+.skills {
+  margin: 50px 0;
+}
+
+.timeLineWrap {
+  /* border: 1px dashed red; */
+}
+.time {
+  color: #2f2f2f;
+}
