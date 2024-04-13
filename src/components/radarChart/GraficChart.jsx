@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import {
     Radar,
     RadarChart,
@@ -44,10 +44,11 @@ const data = [
 function GraficChart() {
 
     return (
+
         <RadarChart
-            cx={300}
+            cx={250}
             cy={250}
-            outerRadius={150}
+            outer25dius={150}
             width={500}
             height={500}
             data={data}
@@ -63,6 +64,7 @@ function GraficChart() {
                 fillOpacity={0.3}
             />
         </RadarChart>
+
     );
 }
 

@@ -27,7 +27,6 @@ const About = () => {
                 </div>
                 <div className={styled.timeLineWrap}>
                     <div className={styled.timeLineItems}>
-
                         <TimeLine />
                     </div>
                 </div>

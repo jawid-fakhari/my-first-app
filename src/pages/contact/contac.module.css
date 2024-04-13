@@ -1,0 +1,67 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  max-width: 850px;
+  margin: 100px auto;
+}
+.nameEmailWrap {
+  display: flex;
+  gap: 7px;
+  width: 100%;
+}
+.nameWrap,
+.emailWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+input {
+  border-style: none;
+}
+.nameInput,
+.emailInput {
+  width: 421px;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.messageTextarea {
+  resize: vertical;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  height: 250px;
+}
+
+.submitInput {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submitInput:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 850px) {
+  .form {
+    width: 90%;
+  }
+  .nameEmailWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .nameInput,
+  .emailInput {
+    width: 100%;
+  }
+}

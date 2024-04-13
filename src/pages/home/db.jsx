@@ -165,6 +165,10 @@ const data = {
     about: {
         image: "/images/my-img.png",
         text: ""
+    },
+    logo: {
+        positive: "/images/my-logo-positive.png",
+        negative: "/images/my-logo-negative.png",
     }
 }
 export default data;
