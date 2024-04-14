@@ -1,3 +1,28 @@
+.linkUtili {
+  max-width: 850px;
+  margin: 100px auto;
+}
+.commonStyle {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+.cv {
+  grid-row: 1 / 2;
+}
+.github {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  width: 50%;
+}
+.linkedin {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -52,7 +77,8 @@ input {
 }
 
 @media screen and (max-width: 850px) {
-  .form {
+  .form,
+  .linkUtili {
     width: 90%;
   }
   .nameEmailWrap {
